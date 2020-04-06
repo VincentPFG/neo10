@@ -18,14 +18,10 @@ module.exports =
 		options:
 			path: 'blog/**/*.md'
 			typeName: 'Post'
+		use: '@gridsome/source-filesystem'
+		options:
+			path: 'person/'
+			typeName: 'Person'
 		'gridsome-plugin-netlify-cms'
 		# '~/plugins/print-webpack-config'
 	]
-
-	transformers:
-		remark:
-			externalLinksTarget: '_blank'
-			externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
-			anchorClassName: 'icon icon-link'
-			plugins: []
-		netlify: {}

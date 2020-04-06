@@ -24,3 +24,19 @@ collections:
                 label: Body
                 name: body
                 widget: markdown
+    -
+        name: person
+        label: Personne
+        folder: person
+        create: true
+        fields:
+            -
+                name: name
+                label: Nom
+                widget: string
+            -
+                name: age
+                label: Age
+                widget: number
+                valueType: int
+                min: 0
